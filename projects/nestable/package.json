@@ -1,9 +1,9 @@
 {
   "name": "ngx-nestable-ukg",
   "description": "Nestable list with drag and drop for Angular",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "license": "MIT",
-  "homepage": "https://github.com/cybercomet/ngx-nestable",
+  "homepage": "https://github.com/unknownguy/ngx-nestable-ukg",
   "private": false,
   "contributors": [
     {
