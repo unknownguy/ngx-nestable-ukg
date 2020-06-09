@@ -99,7 +99,8 @@ app.html
   | :-------------: |:-------------:| :-----:|:--------------|
   | fixedDepth      | boolean |false | Constaint items to keep their initial depth
   | maxDepth      | number|   5 | Maximum nested depth
-  | threshold | number     |    20 | Distance in px after which horizontal movement (nesting) is applied. Also gives padding to the tree. 
+  | threshold | number     |    20 | Distance in px after which horizontal movement (nesting) is applied.
+  | thresholdStyle | string | '20' | Gives padding to the tree, an empty string will result in no padding.
   | disableDrag| boolean|    false| Disable/enable drag event
   | template| TemplateRef|    | HTML template for tree item. Inside this template you can place directives (ngxNestableDragHandle and ngxNestableExpandCollapse). That will describe the custom look and position of these elements, otherwise the default functions are applied.
   | childrensKey | string | 'Items' | Item's children object key name
