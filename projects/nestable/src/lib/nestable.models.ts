@@ -19,6 +19,7 @@ export interface NestableSettings {
     group?: number;
     maxDepth?: number;
     threshold?: number;
+    thresholdStyle?: string;
     fixedDepth?: boolean;
     fixed?: boolean;
     exportCollapsed?: boolean;

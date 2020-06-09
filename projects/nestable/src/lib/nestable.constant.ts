@@ -17,6 +17,7 @@ export const defaultSettings = {
     group: 0, // TODO
     maxDepth: 5,
     threshold: 20,
+    thresholdStyle: '20',
     fixedDepth: false, // fixed item's depth
     exportCollapsed: true, // TODO
     disableDrag: false,

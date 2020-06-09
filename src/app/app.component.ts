@@ -10,7 +10,8 @@ export class AppComponent {
 
   public idCount = 13;
   public options = {
-    fixedDepth: false
+    fixedDepth: false,
+    thresholdStyle: ''
   } as NestableSettings;
   public list = [
     { 
