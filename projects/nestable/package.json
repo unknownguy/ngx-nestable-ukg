@@ -1,0 +1,30 @@
+{
+  "name": "ngx-nestable-ukg",
+  "description": "Nestable list with drag and drop for Angular",
+  "version": "0.9.5",
+  "license": "MIT",
+  "homepage": "https://github.com/cybercomet/ngx-nestable",
+  "private": false,
+  "contributors": [
+    {
+      "name" : "Petar Markov",
+      "email" : "speculees@gmail.com"
+    },
+    {
+      "name" : "Zlatomir Darabuc - Zlaya",
+      "email" : "zlayabre@gmail.com"
+    },
+    {
+      "name" : "Mihajlo Grubjesic",
+      "email" : "mgrubjesic89@gmail.com"
+    }
+  ],
+  "keywords": [
+    "angular",
+    "nestable"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0"
+  }
+}
