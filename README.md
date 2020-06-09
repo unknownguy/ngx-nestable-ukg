@@ -5,7 +5,7 @@
 
 # ngx-nestable
 Nestable list for Angular4 and beyond. This is a Angular adaptation of Jquery [Nestable](https://dbushell.com/Nestable/) library.
-[Demo](https://cybercomet.github.io/ngx-nestable)
+[Demo](https://cybercomet.github.io/ngx-nestable-ukg)
 
 ## Features
 * Drag and Drop
@@ -16,7 +16,7 @@ Nestable list for Angular4 and beyond. This is a Angular adaptation of Jquery [N
 
 ## Instalation
 ```
-npm i ngx-nestable --save
+npm i ngx-nestable-ukg --save
 ```
 
 ## Implementation
@@ -24,7 +24,7 @@ npm i ngx-nestable --save
 app.module.ts
 
 ```ts
-import { NestableModule } from 'ngx-nestable';
+import { NestableModule } from 'ngx-nestable-ukg';
 
 @NgModule({
   imports: [NestableModule],
