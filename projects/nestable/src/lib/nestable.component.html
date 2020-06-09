@@ -3,7 +3,7 @@
 
 <ng-template #nestableList let-nestable="nestable" let-depth="depth">
     <ul [style.padding-left.px]="!depth && options.thresholdStyle ? 0 : options.thresholdStyle"
-        [class]="options.listClass">
+       [ngClass]="[options.listClass, !depth ? options.rootClass : '' ]">
         <li [class]="options.itemClass" [id]="item.$$id" *ngFor="let item of nestable">
 
             <ng-container *ngTemplateOutlet="nestableItem; context:{nestable: nestable, item: item, depth: depth}">
