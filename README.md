@@ -5,7 +5,7 @@
 
 # ngx-nestable-ukg
 Nestable list for Angular4 and beyond. This is a Angular adaptation of Jquery [Nestable](https://dbushell.com/Nestable/) library.
-[Demo](https://cybercomet.github.io/ngx-nestable-ukg)
+[Demo](https://unknownguy.github.io/ngx-nestable-ukg)
 
 ## Features
 * Drag and Drop
