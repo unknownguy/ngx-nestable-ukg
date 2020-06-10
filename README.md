@@ -109,9 +109,11 @@ app.html
 
   | Name| Type |Descirption|
   | :-------------: |:-------------:| :-----|
-  | drag| void| Emits event when item drag is started  
-  | drop| void| Emits event when item is dropped
-  |disclosure|void| Emits event when item expand/collapse state is changed
+  | drag| void | Emits event when item drag is started  
+  | drop| void | Emits event when item is dropped
+  | disclosure | void | Emits event when item expand/collapse state is changed
+  | itemMouseenter | void | Emits on mouse enter on the item
+  | itemMouseleave | void | Emits on mouse leave on the item
 
 ## Authors
 

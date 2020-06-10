@@ -4,6 +4,7 @@
 <ng-template #nestableList let-nestable="nestable" let-depth="depth">
     <ul [style.padding-left.px]="!depth && options.thresholdStyle ? 0 : options.thresholdStyle"
        [ngClass]="[options.listClass, !depth ? options.rootClass : '' ]">
+
         <li [class]="options.itemClass" [id]="item.$$id" *ngFor="let item of nestable">
 
             <ng-container *ngTemplateOutlet="nestableItem; context:{nestable: nestable, item: item, depth: depth}">
@@ -20,7 +21,11 @@
 </ng-template>
 
 <ng-template #nestableItem let-parentList="nestable" let-item="item" let-depth="depth">
-    <div class="nestable-item-container mat-list-item" (mousedown)="dragStartFromItem($event, item, parentList)">
+    <div class="nestable-item-container mat-list-item" 
+        (mousedown)="dragStartFromItem($event, item, parentList)" 
+        (mouseenter)="onMouseenter($event, item)" 
+        (mouseleave)="onMouseleave($event, item)">
+
         <ng-container
             *ngTemplateOutlet="template; context:{$implicit: {item: item, parentList: parentList}, depth: depth}">
         </ng-container>

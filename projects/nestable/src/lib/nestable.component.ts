@@ -49,6 +49,8 @@ export class NestableComponent implements OnInit, OnDestroy {
     @Output() public drop = new EventEmitter();
     @Output() public drag = new EventEmitter();
     @Output() public disclosure = new EventEmitter();
+    @Output() public itemMouseenter = new EventEmitter();
+    @Output() public itemMouseleave = new EventEmitter();
 
     @Input() public template: ViewContainerRef;
     @Input() public options = defaultSettings;
@@ -681,5 +683,13 @@ export class NestableComponent implements OnInit, OnDestroy {
             item['$$expanded'] = false;
         }, null, this.options.childrensKey);
         this.ref.markForCheck();
+    }
+
+    public onMouseenter(event, item) {
+        this.itemMouseenter.emit({ event, item });
+    }
+
+    public onMouseleave(event, item) {
+        this.itemMouseleave.emit({ event, item });
     }
 }
